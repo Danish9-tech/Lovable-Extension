@@ -28,7 +28,6 @@ const ComparisonTable = lazy(() => import("@/components/ProductMaterial").then(m
 const Testimonials = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.Testimonials })));
 const CountdownStrip = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.CountdownStrip })));
 const FeatureConstellation = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.FeatureConstellation })));
-import heroMock from "@/assets/hero-desktop-mock.webp.asset.json";
 import danitechsIcon from "@/assets/danitechs-icon.png.asset.json";
 import wpss1 from "@/assets/wpss1.jpg.asset.json";
 import wpss2 from "@/assets/wpss2.jpg.asset.json";
@@ -177,7 +176,7 @@ function Hero() {
                 lovable.dev — Pro unlocked
               </div>
             </div>
-            <img src={heroMock.url} alt="Danitechs activating unlimited prompts on Lovable Pro" className="w-full" loading="eager" width="1200" height="750" />
+            <img src="/hero-desktop.png" alt="Danitechs activating unlimited prompts on Lovable Pro" className="w-full" loading="eager" width="1200" height="750" />
           </div>
 
           <div className="absolute -right-4 -top-4 hidden md:flex items-center gap-2 rounded-full border border-emerald-400/40 bg-black/80 px-3 py-1.5 text-xs font-semibold text-emerald-300 animate-float">
