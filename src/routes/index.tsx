@@ -4,30 +4,11 @@ import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
-const OrbitCore = lazy(() => import("@/components/FuturisticShowcase").then(m => ({ default: m.OrbitCore })));
-const HoloGrid = lazy(() => import("@/components/FuturisticShowcase").then(m => ({ default: m.HoloGrid })));
-const TerminalStream = lazy(() => import("@/components/FuturisticShowcase").then(m => ({ default: m.TerminalStream })));
-
-const NeuralConstellation = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.NeuralConstellation })));
-const StatMatrix = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.StatMatrix })));
-const CyberBeam = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.CyberBeam })));
-const FeatureDeck = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.FeatureDeck })));
-const MagneticCTA = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.MagneticCTA })));
-
-const LiquidMorph = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.LiquidMorph })));
-const KineticType = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.KineticType })));
-const HoloPrism = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.HoloPrism })));
-const GravityPlayground = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.GravityPlayground })));
-const QuantumTunnel = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.QuantumTunnel })));
-const DataRain = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.DataRain })));
-
 const SavingsCalculator = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.SavingsCalculator })));
 const BeforeAfter = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.BeforeAfter })));
-const LiveActivity = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.LiveActivity })));
 const ComparisonTable = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.ComparisonTable })));
 const Testimonials = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.Testimonials })));
 const CountdownStrip = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.CountdownStrip })));
-const FeatureConstellation = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.FeatureConstellation })));
 
 
 export const Route = createFileRoute("/")({
@@ -437,41 +418,24 @@ function Index() {
         <Hero />
         <Marquee />
         <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
-          <LiveActivity />
-          <KineticType />
-          <OrbitCore />
           <BeforeAfter />
-          <NeuralConstellation />
-          <LiquidMorph />
-          <FeatureConstellation />
         </Suspense>
         <Trial />
         <Pricing />
         <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
           <SavingsCalculator />
           <ComparisonTable />
-          <StatMatrix />
-          <CyberBeam />
-          <HoloGrid />
-          <HoloPrism />
-          <FeatureDeck />
-          <QuantumTunnel />
-          <TerminalStream />
-          <DataRain />
           <Testimonials />
-        </Suspense>
-
-        <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
-          <GravityPlayground />
         </Suspense>
         <How />
         <FAQ />
         <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
           <CountdownStrip />
-          <MagneticCTA
-            href="https://wa.me/923362377416?text=Hi%20Danitechs%2C%20I%27m%20ready%20to%20go%20infinite%20%E2%80%94%20share%20the%20plans."
-            label="Activate Infinite Mode"
-          />
+          <div className="py-24 text-center">
+            <a href="https://wa.me/923362377416?text=Hi%20Danitechs%2C%20I%27m%20ready%20to%20go%20infinite%20%E2%80%94%20share%20the%20plans." target="_blank" rel="noreferrer" className="inline-block rounded-full bg-gradient-to-r from-orange-400 to-fuchsia-500 px-8 py-4 text-sm font-bold text-black transition-transform hover:scale-105">
+              Activate Infinite Mode
+            </a>
+          </div>
         </Suspense>
       </main>
       <Footer />
