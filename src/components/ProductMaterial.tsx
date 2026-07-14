@@ -312,7 +312,7 @@ export function ComparisonTable() {
     { k: "Unlimited prompts", ours: true, them: false },
     { k: "Credits used", ours: "0", them: "Metered" },
     { k: "Flat monthly price", ours: "$40", them: "$25–$500+" },
-    { k: "Multi-device", ours: "Up to 3", them: "Per seat" },
+
     { k: "Free trial", ours: "20 min free", them: "None" },
     { k: "Refund policy", ours: "24h full", them: "Case-by-case" },
     { k: "Setup time", ours: "<10 min", them: "Instant" },
