@@ -64,7 +64,6 @@ const faqs = [
   { q: "How fast is delivery?", a: "Usually within 5–15 minutes during active hours. Worst case under 2 hours." },
   { q: "Is it safe for my Lovable account?", a: "Yes. The extension runs locally in your browser. It never asks for your Lovable password." },
   { q: "Do you offer refunds?", a: "Yes — if the extension fails to activate, we refund in full within 24 hours." },
-  { q: "Multiple devices?", a: "Day Pass and Mini cover 1 device. Weekly covers 2. Monthly covers 3. Need more? Ask for a custom plan." },
 ];
 
 function CountUp({ to, suffix = "", prefix = "", decimals = 0 }: { to: number; suffix?: string; prefix?: string; decimals?: number }) {
