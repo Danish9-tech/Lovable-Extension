@@ -9,10 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as LiabilityRouteImport } from './routes/liability'
 import { Route as GuideRouteImport } from './routes/guide'
 import { Route as ExtensionRouteImport } from './routes/extension'
 import { Route as IndexRouteImport } from './routes/index'
 
+const LiabilityRoute = LiabilityRouteImport.update({
+  id: '/liability',
+  path: '/liability',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GuideRoute = GuideRouteImport.update({
   id: '/guide',
   path: '/guide',
@@ -33,34 +39,45 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/extension': typeof ExtensionRoute
   '/guide': typeof GuideRoute
+  '/liability': typeof LiabilityRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/extension': typeof ExtensionRoute
   '/guide': typeof GuideRoute
+  '/liability': typeof LiabilityRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/extension': typeof ExtensionRoute
   '/guide': typeof GuideRoute
+  '/liability': typeof LiabilityRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/extension' | '/guide'
+  fullPaths: '/' | '/extension' | '/guide' | '/liability'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/extension' | '/guide'
-  id: '__root__' | '/' | '/extension' | '/guide'
+  to: '/' | '/extension' | '/guide' | '/liability'
+  id: '__root__' | '/' | '/extension' | '/guide' | '/liability'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ExtensionRoute: typeof ExtensionRoute
   GuideRoute: typeof GuideRoute
+  LiabilityRoute: typeof LiabilityRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/liability': {
+      id: '/liability'
+      path: '/liability'
+      fullPath: '/liability'
+      preLoaderRoute: typeof LiabilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/guide': {
       id: '/guide'
       path: '/guide'
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ExtensionRoute: ExtensionRoute,
   GuideRoute: GuideRoute,
+  LiabilityRoute: LiabilityRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

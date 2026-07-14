@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 const WA = "https://wa.me/923362377416";
 
 export function Footer() {
@@ -21,10 +23,11 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-widest text-white/60">Product</h4>
             <ul className="mt-4 space-y-2 text-sm text-white/70">
-              <li><a href="#pricing" className="hover:text-white">Pricing</a></li>
-              <li><a href="#how" className="hover:text-white">How it works</a></li>
-              <li><a href="#faq" className="hover:text-white">FAQ</a></li>
-              <li><a href="#customers" className="hover:text-white">Customers</a></li>
+              <li><a href="/#pricing" className="hover:text-white">Pricing</a></li>
+              <li><a href="/#how" className="hover:text-white">How it works</a></li>
+              <li><a href="/#faq" className="hover:text-white">FAQ</a></li>
+              <li><a href="/#customers" className="hover:text-white">Customers</a></li>
+              <li><Link to="/liability" className="hover:text-white">Liability & Warranty</Link></li>
             </ul>
           </div>
 
