@@ -28,20 +28,7 @@ const ComparisonTable = lazy(() => import("@/components/ProductMaterial").then(m
 const Testimonials = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.Testimonials })));
 const CountdownStrip = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.CountdownStrip })));
 const FeatureConstellation = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.FeatureConstellation })));
-import danitechsIcon from "@/assets/danitechs-icon.png.asset.json";
-import wpss1 from "@/assets/wpss1.jpg.asset.json";
-import wpss2 from "@/assets/wpss2.jpg.asset.json";
-import wpss3 from "@/assets/wpss3.jpg.asset.json";
-import wpss4 from "@/assets/wpss4.jpg.asset.json";
-import wpss5 from "@/assets/wpss5.jpg.asset.json";
 
-const chatShots = [
-  { src: wpss1.url, tag: "Verified · Monthly" },
-  { src: wpss2.url, tag: "Verified · Weekly" },
-  { src: wpss3.url, tag: "Verified · Day Pass" },
-  { src: wpss4.url, tag: "Verified · Monthly" },
-  { src: wpss5.url, tag: "Verified · Monthly" },
-];
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -351,60 +338,7 @@ function Pricing() {
   );
 }
 
-function Customers() {
-  return (
-    <section id="customers" className="relative bg-black py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="text-center"
-        >
-          <p className="text-xs uppercase tracking-widest text-white/40">Real chat screenshots</p>
-          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">
-            Meet our recent customers
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-white/60">
-            See why builders love this freelancer web development AI tool. Actual chat screenshots from buyers on WhatsApp, Messenger & Instagram. Tap any image to zoom.
-          </p>
-        </motion.div>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {chatShots.map((c, i) => (
-            <motion.a
-              key={i}
-              href={c.src}
-              target="_blank"
-              rel="noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.06 }}
-              whileHover={{ y: -4 }}
-              className="group block overflow-hidden rounded-xl border border-white/10 bg-gradient-to-b from-emerald-500/10 to-black/50"
-            >
-              <div className="relative aspect-[3/4] overflow-hidden">
-                <img
-                  src={c.src}
-                  alt={`WhatsApp chat proof — ${c.tag}`}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                />
-                <div className="absolute top-2 left-2 inline-flex items-center gap-1.5 rounded-full bg-black/60 px-2 py-1 text-[10px] text-white/90 backdrop-blur">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                  WhatsApp
-                </div>
-              </div>
-              <div className="border-t border-white/10 px-3 py-2 text-[10px] uppercase tracking-widest text-white/60">{c.tag}</div>
-            </motion.a>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function How() {
   return (
@@ -527,7 +461,7 @@ function Index() {
           <DataRain />
           <Testimonials />
         </Suspense>
-        <Customers />
+
         <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
           <GravityPlayground />
         </Suspense>

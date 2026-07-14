@@ -26,7 +26,6 @@ export function Footer() {
               <li><a href="/#pricing" className="hover:text-white">Pricing</a></li>
               <li><a href="/#how" className="hover:text-white">How it works</a></li>
               <li><a href="/#faq" className="hover:text-white">FAQ</a></li>
-              <li><a href="/#customers" className="hover:text-white">Customers</a></li>
               <li><Link to="/liability" className="hover:text-white">Liability & Warranty</Link></li>
             </ul>
           </div>
