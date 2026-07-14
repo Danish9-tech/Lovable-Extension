@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 const WA_TRIAL = "https://wa.me/923362377416?text=Hi%20Danitechs%20%F0%9F%91%8B%0A%0AI%27d%20like%20to%20claim%20the%20FREE%20TRIAL%20license%20to%20test%20the%20extension.%20Please%20send%20me%20a%20trial%20key.%20Thanks!";
-const WA_DOWNLOAD = "https://wa.me/923362377416?text=Hi%20Danitechs%2C%20please%20send%20me%20the%20latest%20extension%20download%20link.";
+
 
 export const Route = createFileRoute("/extension")({
   head: () => ({
@@ -64,7 +64,7 @@ function ExtensionPage() {
               <p className="mt-3 text-sm text-white/60">Official installer — ready to load into Chrome.</p>
 
               <a
-                href={WA_DOWNLOAD}
+                href="https://drive.google.com/drive/u/0/folders/1CRcKejUMHDy834PuI24-BSnoy-6kzbU0"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
