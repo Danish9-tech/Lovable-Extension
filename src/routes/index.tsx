@@ -55,7 +55,7 @@ const features = [
 
 const steps = [
   { n: "1", title: "Pick a plan", body: "Tap Buy Now on the plan you want." },
-  { n: "2", title: "Pay your way", body: "Admin shares details for bKash, Card, PayPal, or USDT." },
+  { n: "2", title: "Pay your way", body: "Admin shares details for Card, USDT, BTC, or ETH." },
   { n: "3", title: "Activate", body: "Paste the license key in the extension — done." },
 ];
 
@@ -377,7 +377,7 @@ function How() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-2 text-xs text-white/50">
-          {["bKash", "Nagad", "USDT", "BTC", "ETH", "Wise", "Payoneer", "Card", "PayPal"].map((m) => (
+          {["USDT", "BTC", "ETH", "Card"].map((m) => (
             <span key={m} className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">{m}</span>
           ))}
         </div>
