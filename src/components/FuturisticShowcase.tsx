@@ -220,7 +220,7 @@ export function HoloGrid() {
 /* ---------------- Terminal Stream ---------------- */
 export function TerminalStream() {
   const lines = [
-    "$ danitects --activate --key=DNTX-****-PRO",
+    "$ danitechs --activate --key=DNTX-****-PRO",
     "→ Verifying license signature… ok",
     "→ Injecting runtime into lovable.dev…",
     "→ Credits limiter: DISABLED",
@@ -261,7 +261,7 @@ export function TerminalStream() {
             <span className="h-3 w-3 rounded-full bg-red-500/70" />
             <span className="h-3 w-3 rounded-full bg-yellow-500/70" />
             <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
-            <span className="ml-3 font-mono text-[11px] text-white/40">~/danitects — zsh</span>
+            <span className="ml-3 font-mono text-[11px] text-white/40">~/danitechs — zsh</span>
           </div>
           <div className="relative min-h-[240px] bg-[radial-gradient(ellipse_at_top,rgba(34,211,238,0.08),transparent_60%)] px-6 py-6 font-mono text-[13px] leading-relaxed text-white/80">
             {lines.slice(0, shown).map((l, i) => (

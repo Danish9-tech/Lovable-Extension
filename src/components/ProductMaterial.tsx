@@ -75,7 +75,7 @@ export function SavingsCalculator() {
                 </div>
                 <div className="flex items-center justify-between rounded-xl border border-emerald-400/30 bg-emerald-500/5 px-4 py-3">
                   <div>
-                    <div className="text-[10px] uppercase tracking-widest text-emerald-300/80">Danitects 30-day plan</div>
+                    <div className="text-[10px] uppercase tracking-widest text-emerald-300/80">Danitechs 30-day plan</div>
                     <div className="mt-1 font-display text-2xl font-bold text-white">${ourCost}</div>
                   </div>
                   <span className="text-xs text-emerald-300/80">Flat</span>
@@ -90,7 +90,7 @@ export function SavingsCalculator() {
               </div>
               <div className="mt-2 text-sm text-white/60">and get unlimited prompts</div>
               <a
-                href={`${WA}?text=Hi%20Danitects%2C%20I%27d%20like%20the%2030-day%20plan.`}
+                href={`${WA}?text=Hi%20Danitechs%2C%20I%27d%20like%20the%2030-day%20plan.`}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.04]"
@@ -133,7 +133,7 @@ export function BeforeAfter() {
         >
           <p className="text-xs uppercase tracking-[0.3em] text-orange-300/70">Drag to compare</p>
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">
-            Lovable throttled vs Danitects unlocked
+            Lovable throttled vs Danitechs unlocked
           </h2>
         </motion.div>
 
@@ -149,7 +149,7 @@ export function BeforeAfter() {
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/15 via-cyan-500/10 to-black">
             <div className="absolute inset-0 grid-bg opacity-[0.12]" />
             <div className="absolute inset-0 flex flex-col items-start justify-end gap-3 p-8">
-              <span className="rounded-full border border-emerald-400/40 bg-emerald-500/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-emerald-300">Danitects · Unlocked</span>
+              <span className="rounded-full border border-emerald-400/40 bg-emerald-500/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-emerald-300">Danitechs · Unlocked</span>
               <div className="font-display text-5xl font-bold text-white md:text-6xl">∞ prompts</div>
               <div className="grid grid-cols-2 gap-3 text-sm">
                 <div className="rounded-lg border border-white/10 bg-black/40 px-4 py-3">
@@ -332,7 +332,7 @@ export function ComparisonTable() {
             The honest comparison
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-white/60">
-            No fine print. Here's how Danitects stacks against paying Lovable directly.
+            No fine print. Here's how Danitechs stacks against paying Lovable directly.
           </p>
         </motion.div>
 
@@ -346,7 +346,7 @@ export function ComparisonTable() {
           <div className="grid grid-cols-3 border-b border-white/10 bg-white/[0.03] text-center">
             <div className="p-4 text-left text-xs uppercase tracking-widest text-white/40">Feature</div>
             <div className="relative p-4 text-sm font-semibold text-white">
-              <span className="rounded-full bg-gradient-to-r from-orange-400 to-fuchsia-500 bg-clip-text text-transparent">Danitects</span>
+              <span className="rounded-full bg-gradient-to-r from-orange-400 to-fuchsia-500 bg-clip-text text-transparent">Danitechs</span>
               <span className="absolute -bottom-px left-1/2 h-0.5 w-16 -translate-x-1/2 rounded-full bg-gradient-to-r from-orange-400 to-fuchsia-500" />
             </div>
             <div className="p-4 text-sm font-semibold text-white/60">Lovable direct</div>
@@ -386,7 +386,7 @@ export function ComparisonTable() {
 /* ---------------- Testimonial Marquee ---------------- */
 const quotes = [
   { name: "Ahmed R.", role: "Freelance dev · Karachi", body: "Shipped 3 client sites in a weekend. Zero credit anxiety.", stars: 5 },
-  { name: "Sofia M.", role: "Indie hacker · Barcelona", body: "Danitects paid for itself in the first day. Wild value.", stars: 5 },
+  { name: "Sofia M.", role: "Indie hacker · Barcelona", body: "Danitechs paid for itself in the first day. Wild value.", stars: 5 },
   { name: "Kenji T.", role: "Startup CTO · Tokyo", body: "Extension is clean, activation was under 5 minutes. Reliable.", stars: 5 },
   { name: "Priya S.", role: "Agency lead · Bangalore", body: "Whole team runs on this now. Lovable Pro without the meter.", stars: 5 },
   { name: "Lucas F.", role: "No-code builder · SP", body: "Refund policy is real — but I never needed it. Solid.", stars: 5 },
@@ -493,7 +493,7 @@ export function CountdownStrip() {
             </div>
           ))}
           <a
-            href={`${WA}?text=Hi%20Danitects%2C%20I%27d%20like%20the%20free%20trial%20key%20before%20it%20expires.`}
+            href={`${WA}?text=Hi%20Danitechs%2C%20I%27d%20like%20the%20free%20trial%20key%20before%20it%20expires.`}
             target="_blank"
             rel="noreferrer"
             className="ml-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.04]"

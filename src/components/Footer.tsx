@@ -11,7 +11,7 @@ export function Footer() {
               <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-fuchsia-500 via-orange-400 to-amber-300">
                 <span className="h-3 w-3 rounded-full bg-black" />
               </span>
-              <span className="text-base font-semibold tracking-wide">Danitects</span>
+              <span className="text-base font-semibold tracking-wide">Danitechs</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-white/50">
               Time-based Lovable Pro access. Unlimited prompts, zero credit anxiety. Activated on WhatsApp in minutes.
@@ -39,7 +39,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
-          <p className="text-xs text-white/40">© {new Date().getFullYear()} Danitects. All rights reserved.</p>
+          <p className="text-xs text-white/40">© {new Date().getFullYear()} Danitechs. All rights reserved.</p>
         </div>
       </div>
     </footer>

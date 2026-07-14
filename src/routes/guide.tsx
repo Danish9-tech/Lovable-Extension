@@ -28,10 +28,10 @@ import s22 from "@/assets/guide/step-22.png";
 import s23 from "@/assets/guide/step-23.png";
 import s24 from "@/assets/guide/step-24.png";
 
-const WA = "https://wa.me/923362377416?text=Hi%20Danitects%2C%20I%20need%20help%20with%20the%20setup.";
+const WA = "https://wa.me/923362377416?text=Hi%20Danitechs%2C%20I%20need%20help%20with%20the%20setup.";
 
 const steps: { img: string; text: string }[] = [
-  { img: s1, text: "First, get the Danitects access kit by contacting us on WhatsApp." },
+  { img: s1, text: "First, get the Danitechs access kit by contacting us on WhatsApp." },
   { img: s2, text: "Extract the zip file into a local folder on your computer." },
   { img: s3, text: "Go to the Extensions Manager in your Chrome browser." },
   { img: s4, text: "Or open the extensions page directly by typing `chrome://extensions` in the address bar." },
@@ -39,8 +39,8 @@ const steps: { img: string; text: string }[] = [
   { img: s6, text: "Click the 'Load unpacked' button to load the extension from the folder." },
   { img: s7, text: "Select the extension folder that you extracted earlier." },
   { img: s8, text: "The extension will now appear in your extensions page as shown." },
-  { img: s9, text: "The extension pop-up will appear on the Lovable website. If not, reload the page and click the Danitects icon." },
-  { img: s10, text: "Get your trial license key or the key you purchased from Danitects." },
+  { img: s9, text: "The extension pop-up will appear on the Lovable website. If not, reload the page and click the Danitechs icon." },
+  { img: s10, text: "Get your trial license key or the key you purchased from Danitechs." },
   { img: s11, text: "Paste the key into the extension key box and activate it." },
   { img: s12, text: "Once activated correctly, you'll see the duration countdown." },
   { img: s13, text: "Click the box icon to move the extension to the sidebar for a better experience." },
@@ -51,7 +51,7 @@ const steps: { img: string; text: string }[] = [
   { img: s18, text: "You'll see 'prompt sent' and the message will appear in the Lovable chat and start working." },
   { img: s19, text: "Preview: the prompt was sent and the AI worked — but 0 credits were consumed." },
   { img: s20, text: "Enable Standard Chat Mode to use the native Lovable prompt box. You can even hide the extension after this." },
-  { img: s21, text: "When activated correctly, you'll see the Danitects badge above the prompt box." },
+  { img: s21, text: "When activated correctly, you'll see the Danitechs badge above the prompt box." },
   { img: s22, text: "Write any prompt and continue. For plan mode, use the extension's prompt box (approving plans from native chat costs credits)." },
   { img: s23, text: "Preview: prompts sent through native chat with the badge — 0 credits used." },
   { img: s24, text: "You can always download a local copy of your project as a backup or self-deploy it on any server." },
@@ -60,10 +60,10 @@ const steps: { img: string; text: string }[] = [
 export const Route = createFileRoute("/guide")({
   head: () => ({
     meta: [
-      { title: "Setup Guide — Danitects" },
-      { name: "description", content: "Complete installation & usage guide for Danitects unlimited Lovable Pro access. Step-by-step screenshots and instructions." },
-      { property: "og:title", content: "Setup Guide — Danitects" },
-      { property: "og:description", content: "Step-by-step guide to activate unlimited Lovable Pro with Danitects." },
+      { title: "Setup Guide — Danitechs" },
+      { name: "description", content: "Complete installation & usage guide for Danitechs unlimited Lovable Pro access. Step-by-step screenshots and instructions." },
+      { property: "og:title", content: "Setup Guide — Danitechs" },
+      { property: "og:description", content: "Step-by-step guide to activate unlimited Lovable Pro with Danitechs." },
     ],
   }),
   component: GuidePage,
@@ -91,7 +91,7 @@ function GuidePage() {
               Installation & Usage Guide
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base text-white/60 md:text-lg">
-              Welcome! Follow these simple steps to install and start building with Lovable Pro using <span className="text-white">0 credits</span> through Danitects.
+              Welcome! Follow these simple steps to install and start building with Lovable Pro using <span className="text-white">0 credits</span> through Danitechs.
             </p>
           </motion.div>
 
@@ -130,7 +130,7 @@ function GuidePage() {
                   <div className="mt-5 overflow-hidden rounded-xl border border-white/10 bg-white/[0.02] shadow-2xl">
                     <img
                       src={step.img}
-                      alt={`Danitects setup step ${i + 1}`}
+                      alt={`Danitechs setup step ${i + 1}`}
                       loading="lazy"
                       className="w-full"
                     />

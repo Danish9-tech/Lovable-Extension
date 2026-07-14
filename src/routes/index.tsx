@@ -1,14 +1,35 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { OrbitCore, HoloGrid, TerminalStream } from "@/components/FuturisticShowcase";
-import { NeuralConstellation, StatMatrix, CyberBeam, FeatureDeck, MagneticCTA } from "@/components/AdvancedFuturistic";
-import { LiquidMorph, KineticType, HoloPrism, GravityPlayground, QuantumTunnel, DataRain } from "@/components/MaterialEra";
-import { SavingsCalculator, BeforeAfter, LiveActivity, ComparisonTable, Testimonials, CountdownStrip, FeatureConstellation } from "@/components/ProductMaterial";
+
+const OrbitCore = lazy(() => import("@/components/FuturisticShowcase").then(m => ({ default: m.OrbitCore })));
+const HoloGrid = lazy(() => import("@/components/FuturisticShowcase").then(m => ({ default: m.HoloGrid })));
+const TerminalStream = lazy(() => import("@/components/FuturisticShowcase").then(m => ({ default: m.TerminalStream })));
+
+const NeuralConstellation = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.NeuralConstellation })));
+const StatMatrix = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.StatMatrix })));
+const CyberBeam = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.CyberBeam })));
+const FeatureDeck = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.FeatureDeck })));
+const MagneticCTA = lazy(() => import("@/components/AdvancedFuturistic").then(m => ({ default: m.MagneticCTA })));
+
+const LiquidMorph = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.LiquidMorph })));
+const KineticType = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.KineticType })));
+const HoloPrism = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.HoloPrism })));
+const GravityPlayground = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.GravityPlayground })));
+const QuantumTunnel = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.QuantumTunnel })));
+const DataRain = lazy(() => import("@/components/MaterialEra").then(m => ({ default: m.DataRain })));
+
+const SavingsCalculator = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.SavingsCalculator })));
+const BeforeAfter = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.BeforeAfter })));
+const LiveActivity = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.LiveActivity })));
+const ComparisonTable = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.ComparisonTable })));
+const Testimonials = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.Testimonials })));
+const CountdownStrip = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.CountdownStrip })));
+const FeatureConstellation = lazy(() => import("@/components/ProductMaterial").then(m => ({ default: m.FeatureConstellation })));
 import heroMock from "@/assets/hero-desktop-mock.webp.asset.json";
-import danitectsIcon from "@/assets/danitects-icon.png.asset.json";
+import danitechsIcon from "@/assets/danitechs-icon.png.asset.json";
 import wpss1 from "@/assets/wpss1.jpg.asset.json";
 import wpss2 from "@/assets/wpss2.jpg.asset.json";
 import wpss3 from "@/assets/wpss3.jpg.asset.json";
@@ -114,7 +135,7 @@ function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="mx-auto mt-6 max-w-2xl text-base text-white/60 md:text-lg"
         >
-          Get instant time-based access to Lovable Pro with Danitects. The ultimate AI web app builder for freelancers and no-code developers. Build without limits and zero credit anxiety. Activate on WhatsApp in under 3 minutes.
+          Get instant time-based access to Lovable Pro with Danitechs. The ultimate AI web app builder for freelancers and no-code developers. Build without limits and zero credit anxiety. Activate on WhatsApp in under 3 minutes.
         </motion.p>
 
         <motion.div
@@ -130,7 +151,7 @@ function Hero() {
             View Plans →
           </a>
           <a
-            href={waLink("Hi Danitects, I have a question about your Lovable Pro plans.")}
+            href={waLink("Hi Danitechs, I have a question about your Lovable Pro plans.")}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white/90 transition-transform hover:scale-[1.04] hover:bg-white/[0.08]"
@@ -156,7 +177,7 @@ function Hero() {
                 lovable.dev — Pro unlocked
               </div>
             </div>
-            <img src={heroMock.url} alt="Danitects activating unlimited prompts on Lovable Pro" className="w-full" loading="eager" width="1200" height="750" />
+            <img src={heroMock.url} alt="Danitechs activating unlimited prompts on Lovable Pro" className="w-full" loading="eager" width="1200" height="750" />
           </div>
 
           <div className="absolute -right-4 -top-4 hidden md:flex items-center gap-2 rounded-full border border-emerald-400/40 bg-black/80 px-3 py-1.5 text-xs font-semibold text-emerald-300 animate-float">
@@ -237,7 +258,7 @@ function Trial() {
             No payment required. Message us on WhatsApp and get a free trial license key instantly to test this AI builder extension before you buy. Build without credit anxiety.
           </p>
           <a
-            href={waLink("Hi Danitects 👋\n\nI'd like to claim the 20-minute FREE TRIAL license to test the Lovable Pro extension. Please send me a trial key. Thanks!")}
+            href={waLink("Hi Danitechs 👋\n\nI'd like to claim the 20-minute FREE TRIAL license to test the Lovable Pro extension. Please send me a trial key. Thanks!")}
             target="_blank"
             rel="noreferrer"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
@@ -307,7 +328,7 @@ function Pricing() {
                 ))}
               </ul>
               <a
-                href={waLink(`Hi Danitects, I'd like to buy the ${p.name} plan (${p.price}). Please share payment details.`)}
+                href={waLink(`Hi Danitechs, I'd like to buy the ${p.name} plan (${p.price}). Please share payment details.`)}
                 target="_blank"
                 rel="noreferrer"
                 className={`mt-6 inline-flex items-center justify-center rounded-full px-4 py-2.5 text-xs font-semibold transition-transform hover:scale-[1.03] ${
@@ -483,35 +504,43 @@ function Index() {
       <main>
         <Hero />
         <Marquee />
-        <LiveActivity />
-        <KineticType />
-        <OrbitCore />
-        <BeforeAfter />
-        <NeuralConstellation />
-        <LiquidMorph />
-        <FeatureConstellation />
+        <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
+          <LiveActivity />
+          <KineticType />
+          <OrbitCore />
+          <BeforeAfter />
+          <NeuralConstellation />
+          <LiquidMorph />
+          <FeatureConstellation />
+        </Suspense>
         <Trial />
         <Pricing />
-        <SavingsCalculator />
-        <ComparisonTable />
-        <StatMatrix />
-        <CyberBeam />
-        <HoloGrid />
-        <HoloPrism />
-        <FeatureDeck />
-        <QuantumTunnel />
-        <TerminalStream />
-        <DataRain />
-        <Testimonials />
+        <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
+          <SavingsCalculator />
+          <ComparisonTable />
+          <StatMatrix />
+          <CyberBeam />
+          <HoloGrid />
+          <HoloPrism />
+          <FeatureDeck />
+          <QuantumTunnel />
+          <TerminalStream />
+          <DataRain />
+          <Testimonials />
+        </Suspense>
         <Customers />
-        <GravityPlayground />
+        <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
+          <GravityPlayground />
+        </Suspense>
         <How />
         <FAQ />
-        <CountdownStrip />
-        <MagneticCTA
-          href="https://wa.me/923362377416?text=Hi%20Danitects%2C%20I%27m%20ready%20to%20go%20infinite%20%E2%80%94%20share%20the%20plans."
-          label="Activate Infinite Mode"
-        />
+        <Suspense fallback={<div className="h-32 w-full animate-pulse bg-black" />}>
+          <CountdownStrip />
+          <MagneticCTA
+            href="https://wa.me/923362377416?text=Hi%20Danitechs%2C%20I%27m%20ready%20to%20go%20infinite%20%E2%80%94%20share%20the%20plans."
+            label="Activate Infinite Mode"
+          />
+        </Suspense>
       </main>
       <Footer />
     </div>

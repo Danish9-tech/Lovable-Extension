@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
-const WA_TRIAL = "https://wa.me/923362377416?text=Hi%20Danitects%20%F0%9F%91%8B%0A%0AI%27d%20like%20to%20claim%20the%20FREE%20TRIAL%20license%20to%20test%20the%20extension.%20Please%20send%20me%20a%20trial%20key.%20Thanks!";
-const WA_DOWNLOAD = "https://wa.me/923362377416?text=Hi%20Danitects%2C%20please%20send%20me%20the%20latest%20extension%20download%20link.";
+const WA_TRIAL = "https://wa.me/923362377416?text=Hi%20Danitechs%20%F0%9F%91%8B%0A%0AI%27d%20like%20to%20claim%20the%20FREE%20TRIAL%20license%20to%20test%20the%20extension.%20Please%20send%20me%20a%20trial%20key.%20Thanks!";
+const WA_DOWNLOAD = "https://wa.me/923362377416?text=Hi%20Danitechs%2C%20please%20send%20me%20the%20latest%20extension%20download%20link.";
 
 export const Route = createFileRoute("/extension")({
   head: () => ({
     meta: [
-      { title: "Download Extension — Danitects" },
-      { name: "description", content: "Download the official Danitects Chrome extension for unlimited Lovable Pro access. Always up-to-date build with a free 30-minute trial." },
-      { property: "og:title", content: "Download Extension — Danitects" },
+      { title: "Download Extension — Danitechs" },
+      { name: "description", content: "Download the official Danitechs Chrome extension for unlimited Lovable Pro access. Always up-to-date build with a free 30-minute trial." },
+      { property: "og:title", content: "Download Extension — Danitechs" },
       { property: "og:description", content: "Official Chrome extension for unlimited Lovable Pro access." },
     ],
   }),
@@ -34,7 +34,7 @@ function ExtensionPage() {
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/70">
-              Danitects Extension
+              Danitechs Extension
             </span>
             <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight md:text-6xl">
               Download Extension
