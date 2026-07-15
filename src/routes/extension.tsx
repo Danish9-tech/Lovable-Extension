@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
-const WA_TRIAL = "https://wa.me/923362377416?text=Hi%20Danitechs%20%F0%9F%91%8B%0A%0AI%27d%20like%20to%20claim%20the%20FREE%20TRIAL%20license%20to%20test%20the%20extension.%20Please%20send%20me%20a%20trial%20key.%20Thanks!";
+const WA_TRIAL = "https://wa.me/66917219589?text=Hi%20Danitechs%20%F0%9F%91%8B%0A%0AI%27d%20like%20to%20claim%20the%20FREE%20TRIAL%20license%20to%20test%20the%20extension.%20Please%20send%20me%20a%20trial%20key.%20Thanks!";
 
 
 export const Route = createFileRoute("/extension")({

@@ -8,7 +8,7 @@ const links = [
   { label: "FAQ", href: "/#faq" },
 ];
 
-const WA = "https://wa.me/923362377416?text=Hi%20Danitechs%2C%20I%20have%20a%20question%20about%20your%20Lovable%20Pro%20plans.";
+const WA = "https://wa.me/66917219589?text=Hi%20Danitechs%2C%20I%20have%20a%20question%20about%20your%20Lovable%20Pro%20plans.";
 
 export function Navbar() {
   const { scrollY } = useScroll();

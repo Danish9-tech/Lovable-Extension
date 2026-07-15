@@ -34,7 +34,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WA_BASE = "https://wa.me/923362377416";
+const WA_BASE = "https://wa.me/66917219589";
 const waLink = (msg: string) => `${WA_BASE}?text=${encodeURIComponent(msg)}`;
 
 const plans = [
@@ -477,7 +477,7 @@ function Index() {
           <LazyRender><CountdownStrip /></LazyRender>
           <LazyRender>
             <MagneticCTA
-              href="https://wa.me/923362377416?text=Hi%20Danitechs%2C%20I%27m%20ready%20to%20go%20infinite%20%E2%80%94%20share%20the%20plans."
+              href="https://wa.me/66917219589?text=Hi%20Danitechs%2C%20I%27m%20ready%20to%20go%20infinite%20%E2%80%94%20share%20the%20plans."
               label="Activate Infinite Mode"
             />
           </LazyRender>
