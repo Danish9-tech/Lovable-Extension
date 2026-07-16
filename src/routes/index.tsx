@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useState, useRef } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import proofVideo from "@/assets/Proof.mp4.mp4";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -102,7 +103,7 @@ function Hero() {
               </div>
             </div>
             <div className="relative aspect-[16/9] w-full bg-[#050505] flex items-center justify-center overflow-hidden">
-                <img src="/hero-desktop.png" alt="Danitechs interface" className="absolute inset-0 h-full w-full object-cover opacity-80 mix-blend-screen" />
+                <video src={proofVideo} autoPlay muted loop playsInline className="absolute inset-0 h-full w-full object-cover opacity-80 mix-blend-screen" ref={el => { if (el) el.playbackRate = 2; }} />
                 
                 {/* Simulated UI Overlay */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 rounded-3xl border border-emerald-500/30 bg-black/60 px-10 py-8 backdrop-blur-xl shadow-2xl">

@@ -64,7 +64,7 @@ function ExtensionPage() {
               <p className="mt-3 text-sm text-white/60">Official installer — ready to load into Chrome.</p>
 
               <a
-                href="https://drive.google.com/drive/u/0/folders/1CRcKejUMHDy834PuI24-BSnoy-6kzbU0"
+                href="https://drive.google.com/drive/folders/1ARtpW0gOazUkiGNzT-5aikbgQapcD7xS?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
