@@ -103,7 +103,7 @@ function Hero() {
               </div>
             </div>
             <div className="relative aspect-[16/9] w-full bg-[#050505] flex items-center justify-center overflow-hidden">
-                <video src={proofVideo} autoPlay muted loop playsInline className="absolute inset-0 h-full w-full object-cover opacity-80 mix-blend-screen" ref={el => { if (el) el.playbackRate = 2; }} />
+                <video src={proofVideo} muted loop playsInline preload="none" poster="/hero-desktop.png" className="absolute inset-0 h-full w-full object-cover opacity-80 mix-blend-screen" ref={el => { if (el) { el.playbackRate = 2; var io = new IntersectionObserver(function(entries) { if (entries[0].isIntersecting) { el.play(); io.disconnect(); } }, { threshold: 0.3 }); io.observe(el); } }} />
                 
                 {/* Simulated UI Overlay */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 rounded-3xl border border-emerald-500/30 bg-black/60 px-10 py-8 backdrop-blur-xl shadow-2xl">
