@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion, useInView } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import proofVideo from "@/assets/Proof.mp4.mp4";
@@ -19,6 +19,11 @@ function LazyRender({ children }: { children: React.ReactNode }) {
 }
 
 function Hero() {
+  var videoRef = useRef<HTMLVideoElement>(null);
+  var [videoPlaying, setVideoPlaying] = useState(false);
+  var playVideo = useCallback(function () {
+    if (videoRef.current) { videoRef.current.play(); videoRef.current.playbackRate = 2; setVideoPlaying(true); }
+  }, []);
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#020202] pt-32 pb-20 border-b border-white/5">
       <div className="pointer-events-none absolute left-1/2 top-1/4 h-[800px] w-[800px] -translate-x-1/2 rounded-full bg-cyan-900/10 blur-[120px]" />
@@ -102,8 +107,11 @@ function Hero() {
                 lovable.dev/projects/infinite
               </div>
             </div>
-            <div className="relative aspect-[16/9] w-full bg-[#050505] flex items-center justify-center overflow-hidden">
-                <video src={proofVideo} muted loop playsInline preload="none" poster="/hero-desktop.png" className="absolute inset-0 h-full w-full object-cover opacity-80 mix-blend-screen" ref={el => { if (el) { el.playbackRate = 2; var io = new IntersectionObserver(function(entries) { if (entries[0].isIntersecting) { el.play(); io.disconnect(); } }, { threshold: 0.3 }); io.observe(el); } }} />
+            <div className="relative aspect-[16/9] w-full bg-[#050505] flex items-center justify-center overflow-hidden group cursor-pointer" onClick={playVideo}>
+                <img src="/hero-desktop.png" alt="" className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${videoPlaying ? 'opacity-0' : 'opacity-80 mix-blend-screen'}`} />
+                <video src={proofVideo} muted loop playsInline preload="none" ref={videoRef} className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${videoPlaying ? 'opacity-80 mix-blend-screen' : 'opacity-0'}`} />
+                
+                {!videoPlaying && <div className="absolute inset-0 flex items-center justify-center z-10"><div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur border border-white/20 text-white text-3xl transition-transform group-hover:scale-110"><svg viewBox="0 0 24 24" fill="currentColor" className="h-8 w-8 ml-1"><path d="M8 5v14l11-7z"/></svg></div></div>}
                 
                 {/* Simulated UI Overlay */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 rounded-3xl border border-emerald-500/30 bg-black/60 px-10 py-8 backdrop-blur-xl shadow-2xl">
