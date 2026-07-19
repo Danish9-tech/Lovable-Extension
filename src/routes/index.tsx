@@ -284,7 +284,6 @@ function HowItWorks() {
 
 function Pricing() {
   const plans = [
-    { name: "24 Hours", price: "$3", tag: "Perfect for one project", link: "24 Hours plan ($3)" },
     { name: "3 Days", price: "$7", tag: "Weekend sprint", link: "3 Days plan ($7)" },
     { name: "7 Days", price: "$15", tag: "Full week of unlimited builds", popular: true, link: "7 Days plan ($15)" },
     { name: "15 Days", price: "$25", tag: "2-week project run", link: "15 Days plan ($25)" },
