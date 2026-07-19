@@ -35,7 +35,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-white/70">
               <li><a href={WA} target="_blank" rel="noreferrer" className="hover:text-white">WhatsApp Support</a></li>
               <li><a href="#pricing" className="hover:text-white">Get a license</a></li>
-              <li><a href={WA} target="_blank" rel="noreferrer" className="hover:text-white">Free 20-min trial</a></li>
+              <li><a href={WA} target="_blank" rel="noreferrer" className="hover:text-white">Free 24-hour trial</a></li>
             </ul>
           </div>
         </div>

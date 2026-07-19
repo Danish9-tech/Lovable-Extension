@@ -65,12 +65,12 @@ function Hero() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href={waLink("Hi Danitechs 👋\n\nI'd like to claim the 20-minute FREE TRIAL license.")}
+            href={waLink("Hi Danitechs 👋\n\nI'd like to claim the 24-hour FREE TRIAL license.")}
             target="_blank"
             rel="noreferrer"
             className="w-full sm:w-auto rounded-full bg-gradient-to-r from-orange-500 to-fuchsia-600 px-8 py-4 text-[15px] font-bold text-white shadow-[0_10px_30px_-10px_rgba(249,115,22,0.5)] transition-transform hover:scale-[1.03]"
           >
-            🆓 Try Free 20 Minutes — No Payment
+            🆓 Try Free 24 Hours — No Payment
           </a>
           <a
             href="#pricing"
@@ -264,13 +264,13 @@ function HowItWorks() {
               <p className="text-lg font-medium text-white italic text-white/80">"Then just build. Your credit counter stays at zero."</p>
               <div className="mt-8">
                   <a
-                      href={waLink("Hi Danitechs 👋\n\nI'd like to claim the 20-minute FREE TRIAL license to test the Lovable Pro extension. Please send me a trial key.")}
+                      href={waLink("Hi Danitechs 👋\n\nI'd like to claim the 24-hour FREE TRIAL license to test the Lovable Pro extension. Please send me a trial key.")}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex flex-col items-center justify-center rounded-2xl bg-white/[0.03] border border-white/10 px-8 py-6 transition-all hover:bg-white/[0.06] hover:border-white/20"
                   >
                       <span className="text-lg font-bold text-white flex items-center gap-2">
-                        🆓 Start Your Free 20-Minute Trial
+                        🆓 Start Your Free 24-Hour Trial
                       </span>
                       <span className="mt-2 text-sm text-white/50">No payment. Message us on WhatsApp — key arrives in minutes.</span>
                   </a>
@@ -370,7 +370,7 @@ function ComparisonTable() {
     { feature: "Custom Domain", free: "❌", pro: "✅", us: "✅" },
     { feature: "Private Projects", free: "❌", pro: "✅", us: "✅" },
     { feature: "Activation Time", free: "Instant", pro: "Instant", us: "3 minutes" },
-    { feature: "Free Trial", free: "❌", pro: "❌", us: "✅ 20 minutes" },
+    { feature: "Free Trial", free: "❌", pro: "❌", us: "✅ 24 hours" },
     { feature: "Refund Guarantee", free: "❌", pro: "Standard", us: "✅ 24-hour full" },
     { feature: "Support", free: "Community", pro: "Email", us: "WhatsApp 24/7" },
   ];
@@ -477,7 +477,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 function FAQ() {
   const faqs = [
     { q: "Will my Lovable.dev account get banned?", a: "No. Danitechs runs entirely locally in your browser. It does not log into your Lovable account, does not interact with Lovable's servers in any flaggable way, and does not require your Lovable credentials at any point." },
-    { q: "Does it really use zero of my Lovable credits?", a: "Yes. Your Lovable credit counter stays at its current number throughout your entire session. You can verify this yourself during the free 20-minute trial before spending a cent." },
+    { q: "Does it really use zero of my Lovable credits?", a: "Yes. Your Lovable credit counter stays at its current number throughout your entire session. You can verify this yourself during the free 24-hour trial before spending a cent." },
     { q: "What happens when my plan expires?", a: "Your Danitechs access ends and Lovable returns to normal credit behavior. You can renew instantly via WhatsApp — same 3-minute process." },
     { q: "Is the WhatsApp activation safe?", a: "Completely. You never share passwords or account details. You simply receive a license key string, paste it into the extension, and you're live." },
     { q: "What if it doesn't work on my setup?", a: "We offer a full refund within 24 hours if the extension fails to activate correctly on your setup. No forms, no delays, no arguments. Message us on WhatsApp and it's done." },
@@ -485,7 +485,7 @@ function FAQ() {
     { q: "Can I use it on multiple devices?", a: "One license key works on one browser session at a time. For multiple devices simultaneously, contact us for a team plan." },
     { q: "Do you offer team or agency plans?", a: "Yes. Message us on WhatsApp with your team size and we'll create a custom plan. Most agency plans start at $60–$80/month for 3–5 seats." },
     { q: "How is payment made?", a: "We accept PayPal, card payments, and USDT. Message us on WhatsApp to receive payment details after choosing your plan." },
-    { q: "Is the 20-minute free trial really free?", a: "100% free. No card required. No commitment. Message us on WhatsApp, we send a time-limited trial key, you test the extension live. If you like it — pick a plan. If not — no hard feelings." },
+    { q: "Is the 24-hour free trial really free?", a: "100% free. No card required. No commitment. Message us on WhatsApp, we send a time-limited trial key, you test the extension live. If you like it — pick a plan. If not — no hard feelings." },
   ];
 
   return (
@@ -512,7 +512,7 @@ function PreFooterCTA() {
                     <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-[#111] to-[#050505] p-10 md:p-16 text-center shadow-[0_0_100px_-20px_rgba(249,115,22,0.15)]">
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 h-1 w-32 bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
                         <h2 className="font-display text-3xl font-bold text-white md:text-5xl">
-                            🆓 Try Danitechs Free for 20 Minutes
+                            🆓 Try Danitechs Free for 24 Hours
                         </h2>
                         <div className="mt-6 space-y-2 text-lg text-white/60">
                             <p>No payment. No card. No commitment.</p>
@@ -520,7 +520,7 @@ function PreFooterCTA() {
                         </div>
                         <div className="mt-10">
                             <a
-                                href={waLink("Hi Danitechs 👋\n\nI'd like to claim the 20-minute FREE TRIAL license.")}
+                                href={waLink("Hi Danitechs 👋\n\nI'd like to claim the 24-hour FREE TRIAL license.")}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-base font-bold text-black transition-transform hover:scale-105"

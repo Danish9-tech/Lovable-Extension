@@ -10,7 +10,7 @@ export const Route = createFileRoute("/extension")({
   head: () => ({
     meta: [
       { title: "Download Extension — Danitechs" },
-      { name: "description", content: "Download the official Danitechs Chrome extension for unlimited Lovable Pro access. Always up-to-date build with a free 30-minute trial." },
+      { name: "description", content: "Download the official Danitechs Chrome extension for unlimited Lovable Pro access. Always up-to-date build with a free 24-hour trial." },
       { property: "og:title", content: "Download Extension — Danitechs" },
       { property: "og:description", content: "Official Chrome extension for unlimited Lovable Pro access." },
     ],
@@ -98,7 +98,7 @@ function ExtensionPage() {
             transition={{ duration: 0.7 }}
             className="mt-16 overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-fuchsia-500/10 via-orange-500/10 to-amber-500/10 p-10 text-center"
           >
-            <h3 className="font-display text-3xl font-semibold md:text-4xl">Try it free for 30 minutes</h3>
+            <h3 className="font-display text-3xl font-semibold md:text-4xl">Try it free for 24 hours</h3>
             <p className="mx-auto mt-4 max-w-xl text-white/70">
               No strings attached. Get an instant free trial license and test the extension right now.
             </p>
