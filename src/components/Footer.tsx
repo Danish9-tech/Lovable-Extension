@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 
-const WA = "https://wa.me/66917219589";
+const WA = "https://wa.me/923362377416";
 
 export function Footer() {
   return (

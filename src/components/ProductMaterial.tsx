@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform, animate, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const WA = "https://wa.me/66917219589";
+const WA = "https://wa.me/923362377416";
 
 /* ---------------- Savings Calculator ---------------- */
 export function SavingsCalculator() {

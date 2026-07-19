@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 
 import guideVideo from "@/assets/Guide.webm";
 
-const WA = "https://wa.me/66917219589?text=Hi%20Danitechs%2C%20I%20need%20help%20with%20the%20setup.";
+const WA = "https://wa.me/923362377416?text=Hi%20Danitechs%2C%20I%20need%20help%20with%20the%20setup.";
 
 export const Route = createFileRoute("/guide")({
   head: () => ({

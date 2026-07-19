@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WA_BASE = "https://wa.me/66917219589";
+const WA_BASE = "https://wa.me/923362377416";
 const waLink = (msg: string) => `${WA_BASE}?text=${encodeURIComponent(msg)}`;
 
 function LazyRender({ children }: { children: React.ReactNode }) {
